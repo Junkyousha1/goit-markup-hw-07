@@ -12,11 +12,53 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+    <div class="js-menu-container">
+        <button class="menu-toggle js-close-menu">
+            <svg><use href="./images/sprites.svg#icon-close-btn-mobile"></use></svg>
+        </button>
+        
+        <nav class="menu-drawer-navigation">
+            <ul>
+                <li><a href="./index.html" class="nav-link-mobile">Studio</a></li>
+                <li><a href="./portfolio.html" class="nav-link-mobile">Portfolio</a></li>
+                <li><a href="#footer" class="nav-link-mobile">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="contacts-container-mobile">
+        
+            <div class="phone-mobile">
+                <a href="tel:+1-212-772-4150">
+                    <span>+1 212-772-4150</span>
+                </a>
+            </div>
+
+            <div class="mail-mobile">
+                <a href="mailto:info@devstudio.com">
+                    <span>info@devstudio.com</span>
+                </a>
+            </div>
+    
+        
+        </div>
+        <div class="mobile-social-media">
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+            </div>
+    </div>
+
     <header class="global-header">
         <div class="logo-container">
             <a class="logo" href="./index.html">Web<span class="logo-2">Studio</span></a>
         </div>
-        <svg class="mobile-menu-icon"><use href="./images/sprites.svg#icon-menu"></use></svg>
+            <svg class="mobile-menu-icon js-open-menu">
+                <use href="./images/sprites.svg#icon-menu"></use>
+            </svg>
+
+        
         <div class="nav-container container">
             
             <div>
@@ -37,7 +79,6 @@
                         </svg>
                         <span>info@devstudio.com</span>
                     </a>
-                    <!-- <a href="mailto:info@devstudio.com">info@devstudio.com</a> -->
                 </div>
 
                 <div class="phone">
@@ -480,7 +521,15 @@
             </div>
         </form>
     </footer>
+    
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 
 </body>
