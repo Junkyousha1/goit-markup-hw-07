@@ -35,7 +35,7 @@ img {
     display: flex;
     border-bottom: 1px solid #ECECEC;
     align-items: center;
-    justify-content: space-between;
+    
     width: 480px;
     padding: 15px;
 }
@@ -82,8 +82,7 @@ img {
     width: 200px;
     padding: 0;
     justify-content: space-between;
-    margin-left: 93px;
-    margin-right: 330px;
+    margin: 0;
     
 }
 .contacts-container{
@@ -1060,19 +1059,75 @@ textarea:focus{
 }
 
 @media screen and (min-width:768px) {
+    /*  */
+    .global-header {
+        display: flex;
+        border-bottom: 1px solid #ECECEC;
+        align-items: center;
+        gap: 93px;
+        width: 768px;
+        height: 80px;
+        padding: 0;
     
+    }
+    .mobile-menu-icon{
+        display: none;
+    }
+    .container{
+        display: flex;
+        max-width: 768px;
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+    .nav-container {
+        display: flex;
+        width: 530px;
+        padding-top: 21px;
+        padding-bottom: 21px;
+        margin: 0;
+        align-items: center;
+        box-sizing: content-box;
+        justify-content: space-between;
+    }
+    .nav-link{
+        padding: 0;
+    }
+    .nav-link-current{
+        padding: 0px 0px 28px 0px;
+    }
+    .main-navigation ul {
+        display: flex;
+        width: 200px;
+        padding: 0;
+        gap: 30px;
+        margin: 0;
+
+    }
+    .contacts-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .phone{
+        margin: 0;
+    }
+
 }
 
 
 @media screen and (min-width: 1158px){
     .global-header {
-            display: flex;
-            border-bottom: 1px solid #ECECEC;
-            align-items: center;
-            justify-content: center;
-            width: 1600px;
-            padding: 0;
-        }
+        display: flex;
+        border-bottom: 1px solid #ECECEC;
+        align-items: center;
+        justify-content: center;
+        width: 1600px;
+        height: 101px;
+        padding: 0;
+        gap: 0;
+    }
 
     .container {
         display: flex;
@@ -1084,13 +1139,58 @@ textarea:focus{
 
     .nav-container {
         display: flex;
-        max-width: 1400px;
+        justify-content: space-between;
+        width: 970px;
         padding-top: 25px;
         padding-bottom: 25px;
         margin: 0;
         align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
     }
+    .main-navigation{
+        margin: 0;
+    }
+    .main-navigation ul {
+        display: flex;
+        width: 200px;
+        padding: 0;
+        justify-content: space-between;
+        gap: 0;
+        margin-left: 93px;
+        margin-right: 0;
 
+    }
+   .nav-link {
+       text-decoration: none;
+       color: var(--heading-color);
+       font-family: Roboto;
+       font-size: 14px;
+       font-weight: 500;
+       line-height: 16px;
+       letter-spacing: 0.02em;
+       text-align: left;
+       padding: 10px;
+   }
+    .nav-link-current{
+        padding: 10px 10px 35px 10px;
+    }
+    .contacts-container {
+        width: 350px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .phone {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        margin-left: 40px;
+        gap: 10px;
+        transition: fill var(--transition);
+    }
     .mobile-menu-icon{
         display: none;
     }
