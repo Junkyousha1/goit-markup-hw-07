@@ -1130,6 +1130,49 @@ textarea:focus {
     display: none;
     flex-direction: column;
   }
+  .quality-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    padding: 60px 0px;
+    margin: 0;
+  }
+  .icon-quality-container {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+  }
+  .quality-list {
+    display: flex;
+    flex-direction: column;
+    width: 354px;
+    /* flex-basis: calc((100% - 120px) / 4); */
+    align-items: center;
+  }
+
+  .company-qualities {
+    font-weight: 700;
+    color: var(--heading-color);
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  .company-qualities-text {
+    line-height: 24px;
+    width: 354px;
+    height: auto;
+    font-weight: 400;
+    color: var(--paragraph-color);
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1158px) {
