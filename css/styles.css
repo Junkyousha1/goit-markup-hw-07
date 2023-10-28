@@ -34,7 +34,7 @@ img {
   display: flex;
   border-bottom: 1px solid #ececec;
   align-items: center;
-
+  justify-content: space-between;
   width: 480px;
   padding: 15px;
 }
@@ -1046,6 +1046,9 @@ textarea:focus {
     height: 80px;
     padding: 0;
   }
+  .global-header .logo-container {
+    margin-left: 15px;
+  }
   .mobile-menu-icon {
     display: none;
   }
@@ -1216,7 +1219,32 @@ textarea:focus {
   .customers-container a {
     flex-basis: calc((100% - 90px) / 3);
   }
-  /*  */
+
+  .footer-section {
+    display: flex;
+    width: 768px;
+    height: 464px;
+    position: relative;
+  }
+  .footer-section .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .newsletter-form {
+    display: flex;
+    position: absolute;
+    left: 166px;
+    bottom: 60px;
+  }
+  .footer-address li {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1229,6 +1257,9 @@ textarea:focus {
     height: 101px;
     padding: 0;
     gap: 0;
+  }
+  .global-header .logo-container {
+    margin: 0;
   }
 
   .container {
@@ -1404,6 +1435,7 @@ textarea:focus {
   .footer-section {
     display: flex;
     width: 1600px;
+    height: auto;
     padding-left: 100px;
     padding-right: 100px;
     background-color: var(--main-section-backgroud-color);
@@ -1449,6 +1481,7 @@ textarea:focus {
   }
   .newsletter-form {
     align-items: flex-start;
+    position: static;
   }
   .modal-content {
     width: 528px;
