@@ -1287,6 +1287,9 @@ textarea:focus {
 }
 
 @media screen and (min-width: 1158px) {
+  main {
+    max-width: none;
+  }
   .global-header {
     display: flex;
     border-bottom: 1px solid #ececec;
@@ -1296,6 +1299,7 @@ textarea:focus {
     height: 101px;
     padding: 0;
     gap: 0;
+    max-width: none;
   }
   .global-header .logo-container {
     margin: 0;
@@ -1377,6 +1381,7 @@ textarea:focus {
   .main-section {
     width: 1600px;
     height: 600px;
+    max-width: none;
     padding-top: 200px;
     padding-bottom: 200px;
     background-size: cover;
@@ -1425,9 +1430,10 @@ textarea:focus {
     padding-top: 94px;
     padding-bottom: 0;
     margin: 0;
+    max-width: none;
   }
   .quality-list {
-    width: 270px;
+    width: 20%;
     flex-basis: calc((100% - 120px) / 4);
   }
   .company-qualities-text {
@@ -1438,6 +1444,7 @@ textarea:focus {
   .what-we-do-container {
     display: block;
     flex-direction: column;
+    padding-bottom: 94px;
   }
   .section-heading {
     font-weight: 700;
@@ -1488,6 +1495,7 @@ textarea:focus {
   .footer-section {
     display: flex;
     width: 1600px;
+    max-width: none;
     height: auto;
     padding-left: 100px;
     padding-right: 100px;
